@@ -1,1 +1,51 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+
+:root {
+  --cream: #F5E6CA;
+  --cream-deep: #EAD7B5;
+  --coffee: #6F4E37;
+  --coffee-dark: #4E3527;
+  --coffee-soft: #8B6A4E;
+  --accent: #A67C52;
+  --card: #FFF8EB;
+  --border: rgba(111, 78, 55, .20);
+  --muted: #80634B;
+  --shadow: 0 14px 35px rgba(79, 53, 39, .09);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--coffee);
+  font-family: 'DM Sans', Arial, sans-serif;
+  line-height: 1.6;
+}
+button, input, textarea { font: inherit; }
+a { -webkit-tap-highlight-color: transparent; }
+.page-shell {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 42px 5% 70px;
+  min-height: calc(100vh - 230px);
+}
+.section { padding: 42px 0; }
+.section-label, .intro {
+  color: var(--accent) !important;
+  font-size: 12px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.section-title {
+  color: var(--coffee-dark);
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(30px, 4vw, 42px);
+  margin: 10px 0 28px;
+}
+.section-title span, .hero h1 span { color: var(--accent) !important; }
+.section-description { color: var(--muted); line-height: 1.8; }
+@media (max-width: 600px) {
+  .page-shell { padding: 24px 5% 45px; }
+  .section { padding: 25px 0; }
+}

@@ -8,14 +8,14 @@
 .project-card {
   padding: 25px;
   border-radius: 14px;
-  background: #111c30;
-  border: 1px solid #263750;
+  background: #FFF8EB;
+  border: 1px solid rgba(111, 78, 55, .22);
   transition: transform 0.3s, border-color 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: #38bdf8;
+  border-color: #A67C52;
 }
 
 .project-icon {
@@ -24,8 +24,8 @@
   display: grid;
   place-items: center;
   border-radius: 12px;
-  background: #1c3550;
-  color: #38bdf8;
+  background: #EAD7B5;
+  color: #A67C52;
   font-weight: bold;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .project-card p {
-  color: #94a3b8;
+  color: #80634B;
   line-height: 1.8;
   font-size: 14px;
 }
@@ -49,8 +49,8 @@
 .tags span {
   padding: 6px 10px;
   border-radius: 6px;
-  background: #1c3550;
-  color: #7dd3fc;
+  background: #EAD7B5;
+  color: #6F4E37;
   font-size: 12px;
 }
 
